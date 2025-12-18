@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity Drop - Megaboom</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '626667036487703');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=626667036487703&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2XZ4WBEF7"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-W2XZ4WBEF7');
+    </script>
+    <!-- End Google Analytics -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #8B1A1A, #C41E3A);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .header {
+            color: white;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .header h2 {
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .platform-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 0;
+        }
+
+        .platform-row:not(:last-child) {
+            border-bottom: 1px solid #E5E5E5;
+        }
+
+        .platform-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .youtube-icon {
+            width: 32px;
+            height: 32px;
+            background: #FF0000;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .youtube-icon::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 10px solid white;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            margin-left: 2px;
+        }
+
+        .platform-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .play-button {
+            background: white;
+            border: 2px solid #000;
+            border-radius: 12px;
+            padding: 12px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .play-button:hover {
+            background: #000;
+            color: white;
+        }
+
+        @media (max-width: 640px) {
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .header h2 {
+                font-size: 28px;
+            }
+
+            .card {
+                padding: 30px 24px;
+            }
+
+            .platform-name {
+                font-size: 18px;
+            }
+
+            .play-button {
+                padding: 10px 24px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>STORMLINE</h1>
+            <h2>Megaboom</h2>
+        </div>
+
+        <div class="card">
+            <div class="platform-row">
+                <div class="platform-info">
+                    <div class="youtube-icon"></div>
+                    <span class="platform-name">YouTube Music</span>
+                </div>
+                <a href="https://music.youtube.com/watch?v=9o-SSXm9pR8&si=kdshyhtd1PaOf-sr" target="_blank" class="play-button">Play</a>
+            </div>
+
+            <div class="platform-row">
+                <div class="platform-info">
+                    <div class="youtube-icon"></div>
+                    <span class="platform-name">YouTube</span>
+                </div>
+                <a href="https://youtu.be/9o-SSXm9pR8?si=6U_ccJAIICwWkduR" target="_blank" class="play-button">Play</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
